@@ -1,0 +1,108 @@
+/* CSS Reset  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Body */
+body {
+  padding: 0 10px;
+  scroll-behavior: smooth;
+}
+/* Title */
+.title {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.subtitle {
+  margin-top: 10px;
+  text-align: center;
+}
+/* Header */
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.menu a:first-child {
+  padding: 1rem;
+  background-color: hwb(213 17% 25%);
+  color: white;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+}
+.menu a:last-child {
+  padding: 1rem;
+  background-color: white;
+  color: hwb(213 17% 25%);
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+}
+/* Main Content */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 3.75rem;
+}
+/* Triangle/Jajargenjang */
+.card {
+  border: 2.8px hwb(213 17% 25%) solid;
+  box-shadow: 2px 15px 5px -8px rgba(0, 0, 0, 0.29);
+}
+.Jajargenjang-title {
+  padding: 1rem;
+  background-color: hwb(213 17% 25%);
+  color: white;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+}
+.Segitiga-title {
+  padding: 1rem;
+  background-color: hwb(213 17% 25%);
+  color: white;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+}
+.gambarbangundatar{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.Rumus-keterangan{
+  margin-left: 1rem;
+}
+.subtitiletext{
+ text-align: center;
+}
+.form-triangle {
+    margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+}
+.form-hitung{
+    text-align: center;
+}
+.form-triangle > input {
+  padding: 8px 4px;
+  border-radius: 6px;
+  width: 100%;
+}
+.button-triangle {
+  margin-bottom: 1rem;
+  padding: 6px 8px;
+  background-color: hwb(213 17% 25%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  gap: 10px;
+}
