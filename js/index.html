@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Head -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Kalkulator Metematik</title>
+        <link rel="stylesheet" href="../css/index.css">
+        <script src="index.js" defer></script>
+    </head>
+        <!-- Body -->
+    <body>
+        <!-- Title -->
+     <h1 class="title">Welcome To Katik</h1>
+     <p class="subtitle">Hai Sobat, Selamat datang di Katik :] Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+        <!-- Header -->
+    <header>
+         <nav>
+         <div class="menu">
+            <a href="#Triangle" id="buttonTriangle">Segitiga</a>
+            <a href="#Parallelogram" id="buttonParallelogram">Jajargenjang</a>
+         </div>
+         </nav>
+    </header>
+    <main>
+        <!-- Luas Segitiga -->
+        <section id="Triangle">
+            <div class="card">
+                <div>
+                    <h2 class="Segitiga-title">Segitiga</h2>
+                </div>
+                <img src="../assets/Segitiga.png"alt="" class="gambarbangundatar">
+                <div class="Rumus-keterangan">
+                    <h4>Rumus Luas Segitiga yaitu:</h4>
+                    <p class="subtitiletext">L=1/2 x T x A</p>
+                    <div>
+                        <p>Dimana</p>
+                        <p>L = Luas</p>
+                        <p>A = Panjang Alas</p>
+                        <p>T = Tinggi</p>
+                    </div>
+                    <div class="form-hitung">
+                        <h1>Hitung Luas Segitiga</h1>
+                    </div>
+                    <div class="form-triangle">
+                        <input type="number" id="alas-luastriangle" placeholder="Nilai alas">
+                        <input type="number" id="tinggi-luastriangle" placeholder="Nilai tinggi">
+                        <div id="kolom-1"></div>
+                        <div id="kolom-2"></div>
+                        <div id="kolom-3"></div>
+                        <button type="submit" class="button-triangle" 
+                        onclick="calculateTriangle()">
+                        Hitung</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Keliling Segitiga -->
+        <section id="Triangle">
+            <div class="card">
+                <div>
+                    <h2 class="Segitiga-title">Segitiga</h2>
+                </div>
+                <img src="../assets/Segitiga.png"alt="" class="gambarbangundatar">
+                <div class="Rumus-keterangan">
+                    <h4>Rumus Keliling Segitiga yaitu:</h4>
+                    <p class="subtitiletext">K = A + B + C</p>
+                    <div>
+                        <p>Dimana</p>
+                        <p>A = Sisi 1</p>
+                        <p>B = Sisi 2</p>
+                        <p>C = Sisi 3</p>
+                    </div>
+                    <div class="form-hitung">
+                        <h1>Hitung Keliling Segitiga</h1>
+                    </div>
+                    <div class="form-triangle">
+                        <input type="number" id="sisi1-kelilingtriangle" placeholder="Sisi 1">
+                        <input type="number" id="sisi2-kelilingtriangle" placeholder="Sisi 2">
+                        <input type="number" id="sisi3-kelilingtriangle" placeholder="Sisi 3">
+                        <div id="kolom-4"></div>
+                        <div id="kolom-5"></div>
+                        <div id="kolom-6"></div>
+                        <button type="submit" class="button-triangle" 
+                        onclick="calculateKTriangle()">
+                        Hitung</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Luas Jajargenjang -->
+        <section id="Parallelogram">
+            <div class="card">
+                <div>
+                    <h2 class="Jajargenjang-title">Jajargenjang</h2>
+                </div>
+                <img src="../assets/jajar-genjang.png"alt="" class="gambarbangundatar">
+                <div class="Rumus-keterangan">
+                    <h4>Rumus Luas Jajargenjang yaitu:</h4>
+                    <p class="subtitiletext">L= T x A</p>
+                    <div>
+                        <p>Dimana</p>
+                        <p>L = Luas</p>
+                        <p>A = Panjang Alas</p>
+                        <p>T = Tinggi</p>
+                    </div>
+                    <div class="form-hitung">
+                        <h1>Hitung Luas Jajargenjang</h1>
+                    </div>
+                    <div class="form-triangle">
+                        <input type="number" id="alas-luasparallelogram" placeholder="Nilai alas">
+                        <input type="number" id="tinggi-luasparallelogram" placeholder="Nilai tinggi">
+                        <div id="kolom-7"></div>
+                        <div id="kolom-8"></div>
+                        <div id="kolom-9"></div>
+                        <button type="submit" class="button-triangle" 
+                        onclick="calculateParallelogram()">
+                        Hitung</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Keliling Jajargenjang -->
+        <section id="Parallelogram">
+            <div class="card">
+                <div>
+                    <h2 class="Jajargenjang-title">Jajargenjang</h2>
+                </div>
+                <img src="../assets/jajar-genjang.png"alt="" class="gambarbangundatar">
+                <div class="Rumus-keterangan">
+                    <h4>Rumus Keliling Jajargenjang yaitu:</h4>
+                    <p class="subtitiletext">K = 2 x (A + B)</p>
+                    <div>
+                        <p>Dimana</p>
+                        <p>K = Keliling</p>
+                        <p>A = Panjang Alas</p>
+                        <p>B = Tinggi Diagonal</p>
+                    </div>
+                    <div class="form-hitung">
+                        <h1>Hitung Keliling Jajargenjang</h1>
+                    </div>
+                    <div class="form-triangle">
+                        <input type="number" id="sisi1-kelilingparallelogram" placeholder="Panjang Alas">
+                        <input type="number" id="sisi2-kelilingparallelogram" placeholder="Tinggi Diagonal">
+                        <div id="kolom-10"></div>
+                        <div id="kolom-11"></div>
+                        <div id="kolom-12"></div>
+                        <button type="submit" class="button-triangle" 
+                        onclick="calculateKparallelogram()">
+                        Hitung</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>Copyright 2023 Fuad Mannnaan</footer>
+    </body>
+</html>
